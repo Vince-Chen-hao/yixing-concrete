@@ -30,7 +30,7 @@
 
     <section class="statement"><div class="shell"><p class="section-tag">YI XING CONCRETE</p><h2>不只完成一項工程，<br>更是守護工程之後的每一天。</h2></div></section>
 
-    <footer id="contact"><div class="shell footer-grid"><div><a class="brand" href="#top"><span>YI</span><b>宜興預拌混凝土</b></a><p>YI XING READY MIXED CONCRETE CO., LTD.</p></div><div><p class="section-tag">CONTACT</p><a href="https://www.facebook.com/yixingconcrete/?locale=zh_TW" target="_blank" rel="noreferrer">前往 Facebook 粉絲專頁 ↗</a><a href="mailto:service@yixingconcrete.tw">工程合作洽詢 ↗</a></div></div><div class="shell footer-bottom">© {{ new Date().getFullYear() }} 宜興預拌混凝土股份有限公司</div></footer>
+    <footer id="contact"><div class="shell footer-grid"><div><a class="brand" href="#top"><span>YI</span><b>宜興預拌混凝土</b></a><p>YI XING READY MIXED CONCRETE CO., LTD.</p></div><div><p class="section-tag">CONTACT</p><a href="https://www.google.com/maps/place/%E5%AE%9C%E8%88%88%E9%A0%90%E6%8B%8C%E6%B7%B7%E5%87%9D%E5%9C%9F%E8%82%A1%E4%BB%BD%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8/@24.6306186,121.8180159,17z" target="_blank" rel="noreferrer">宜蘭縣冬山鄉大興村德興六路 43 號 ↗</a><a href="tel:+88639903210">03-9903210</a><a href="https://www.facebook.com/yixingconcrete/?locale=zh_TW" target="_blank" rel="noreferrer">前往 Facebook 粉絲專頁 ↗</a></div></div><div class="shell footer-bottom">© {{ new Date().getFullYear() }} 宜興預拌混凝土股份有限公司</div></footer>
   </main>
 </template>
 
