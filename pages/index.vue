@@ -30,7 +30,7 @@
       <div class="shell quality-layout">
         <div><p class="section-tag">QUALITY RECORD</p><h2 id="quality-title">讓品質有紀錄，<br>也讓合作有依據。</h2></div>
         <a class="grmc-record" href="https://grmc.tcri.org.tw/verify/detail/25" target="_blank" rel="noreferrer" aria-label="前往 GRMC 官方驗證紀錄"><span class="grmc-seal">GRMC<small>040</small></span><span><strong>優質混凝土驗證紀錄</strong><em>宜興預拌混凝土股份有限公司二廠</em><b>查看官方查驗頁 ↗</b></span></a>
-        <div class="quality-copy"><p>GRMC 官方頁面載有第 040 號驗證紀錄與適用範圍；宜興亦保留優質砂石粒料標章之品質紀錄，從原料、拌合到出料均納入流程管理。</p><small>GRMC 官方頁載明之效期為 2023.07.08–2026.07.07；本區呈現為歷史驗證紀錄，現行證書與檢驗文件以公司提供資料為準。</small></div>
+        <div class="quality-copy"><p>GRMC 官方頁面載有第 040 號驗證紀錄與適用範圍；宜興亦保留優質砂石粒料標章之品質紀錄，從原料、拌合到出料均納入流程管理。</p></div>
       </div>
     </section>
 
@@ -48,7 +48,7 @@
 
     <section class="statement"><div class="shell"><p class="section-tag">YI XING CONCRETE</p><h2>不只完成一項工程，<br>更是守護工程之後的每一天。</h2></div></section>
 
-    <section class="project-gallery" aria-labelledby="gallery-title"><div class="shell gallery-heading"><div><p class="section-tag">ON SITE · FROM FACEBOOK</p><h2 id="gallery-title">現場，是品質真正被看見的地方。</h2></div><p>宜興的技術交流、廠區參訪與工程足跡。</p></div><div class="gallery-viewport"><div class="gallery-track"><a v-for="(photo, index) in galleryLoop" :key="`${photo.id}-${index}`" class="gallery-card" :href="photo.href" target="_blank" rel="noreferrer"><img :src="photo.src" :alt="photo.alt" loading="lazy"><span>{{ photo.label }}</span></a></div></div></section>
+    <section class="project-gallery" aria-labelledby="gallery-title"><div class="shell gallery-heading"><div><p class="section-tag">ON SITE · FROM FACEBOOK</p><h2 id="gallery-title">現場，是品質真正被看見的地方。</h2></div><p>宜興的技術交流、廠區參訪與工程足跡。</p></div><div class="gallery-viewport"><div class="gallery-track"><a v-for="(photo, index) in galleryLoop" :key="`${photo.id}-${index}`" class="gallery-card" :class="{ 'gallery-card--equipment': photo.focus === 'equipment' }" :href="photo.href" target="_blank" rel="noreferrer"><img :src="photo.src" :alt="photo.alt" loading="lazy"><span>{{ photo.label }}</span></a></div></div></section>
 
     <section class="contact-cta" id="contact"><div class="shell"><p class="section-tag">CONTACT US</p><div class="contact-heading"><h2>工程合作，<br>從一通可靠的電話開始。</h2><p>需要混凝土供應、材料規劃或工程合作，歡迎直接與宜興聯繫。</p></div><div class="contact-grid">
       <a class="contact-card" href="https://maps.app.goo.gl/suhr2guwQosepXpu9" target="_blank" rel="noreferrer"><span class="contact-icon"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M20 10c0 5-8 11-8 11S4 15 4 10a8 8 0 1 1 16 0Z" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="10" r="2.5" stroke="currentColor" stroke-width="1.8"/></svg></span><span><small>公司地址</small><strong>宜蘭縣冬山鄉大興村<br>德興六路 43 號</strong></span><b>→</b></a>
@@ -61,7 +61,7 @@
 
 <script setup lang="ts">
 const galleryPhotos = [
-  { id: '1665537548915827', src: '/project-photos/fb-01.jpg', label: '專業教育訓練', alt: '宜興專業教育訓練現場' }, { id: '1665537542249161', src: '/project-photos/fb-02.jpg', label: '技術交流', alt: '宜興技術交流分享' }, { id: '1665537488915833', src: '/project-photos/fb-03.jpg', label: '材料知識分享', alt: '混凝土材料專業分享' }, { id: '1665537482249167', src: '/project-photos/fb-04.jpg', label: '工程案例研討', alt: '工程案例研討活動' }, { id: '1658469232955992', src: '/project-photos/fb-05.jpg', label: '團隊專業培訓', alt: '宜興團隊專業培訓' }, { id: '1658469189622663', src: '/project-photos/fb-06.jpg', label: '品質實務分享', alt: '品質實務分享活動' }, { id: '1656958886440360', src: '/project-photos/fb-07.jpg', label: '職安管理', alt: '宜興職業安全管理活動' }, { id: '1579980004138249', src: '/project-photos/fb-08.jpg', label: '淡江大橋足跡', alt: '淡江大橋夜景與宜興團隊' }, { id: '1579069627562620', src: '/project-photos/fb-09.jpg', label: '低碳技術交流', alt: '混凝土低碳技術交流' }, { id: '1654447180024864', src: '/project-photos/fb-10.jpg', label: '廠區參訪', alt: '宜興預拌混凝土廠區參訪' },
+  { id: '1665537548915827', src: '/project-photos/fb-01.jpg', label: '專業教育訓練', alt: '宜興專業教育訓練現場' }, { id: '1665537542249161', src: '/project-photos/fb-02.jpg', label: '技術交流', alt: '宜興技術交流分享' }, { id: '1665537488915833', src: '/project-photos/fb-03.jpg', label: '材料知識分享', alt: '混凝土材料專業分享' }, { id: '1665537482249167', src: '/project-photos/fb-04.jpg', label: '工程案例研討', alt: '工程案例研討活動' }, { id: '1658469232955992', src: '/project-photos/fb-05.jpg', label: '團隊專業培訓', alt: '宜興團隊專業培訓' }, { id: '1654447276691521', src: '/project-photos/fb-11.jpg', label: '拌合設備參訪', alt: '宜興拌合設備與廠區參訪', focus: 'equipment' }, { id: '1656958886440360', src: '/project-photos/fb-07.jpg', label: '職安管理', alt: '宜興職業安全管理活動' }, { id: '1579980004138249', src: '/project-photos/fb-08.jpg', label: '淡江大橋足跡', alt: '淡江大橋夜景與宜興團隊' }, { id: '1579069627562620', src: '/project-photos/fb-09.jpg', label: '低碳技術交流', alt: '混凝土低碳技術交流' }, { id: '1654447180024864', src: '/project-photos/fb-10.jpg', label: '廠區參訪', alt: '宜興預拌混凝土廠區參訪' },
 ].map((photo) => ({ ...photo, href: `https://www.facebook.com/photo.php?fbid=${photo.id}&set=pb.100063787931424.-2207520000&type=3` }))
 const galleryLoop = [...galleryPhotos, ...galleryPhotos]
 useSeoMeta({ title: '宜興預拌混凝土股份有限公司｜穩定供料・品質管理・工程合作', description: '宜興預拌混凝土提供高流動性、自充填、透水、早強、鋼纖與預拌混凝土服務，以材料設計、穩定供料與全程品質管理支持工程合作。' })

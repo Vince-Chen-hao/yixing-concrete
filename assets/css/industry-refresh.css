@@ -18,16 +18,16 @@
 .quality-record { padding:95px 0; border-bottom:1px solid var(--line); background:#e6e8e4; }
 .quality-layout { display:grid; grid-template-columns:1.05fr 1.1fr 1fr; gap:40px; align-items:center; }
 .quality-layout h2 { margin:0; font:clamp(30px,3vw,44px)/1.4 'Noto Serif TC',serif; }
-.grmc-record { display:grid; grid-template-columns:92px 1fr; gap:18px; align-items:center; padding:22px; border:1px solid #263137; background:#faf9f4; box-shadow:8px 8px 0 #cfd5ce; transition:transform .2s ease,box-shadow .2s ease; }
-.grmc-record:hover { transform:translate(-3px,-3px); box-shadow:11px 11px 0 #c6ccc5; }
-.grmc-seal { display:grid; width:92px; aspect-ratio:1; place-items:center; border:2px solid #263137; border-radius:50%; color:#263137; font:700 19px/1 'DM Mono',monospace; letter-spacing:-.08em; }
+.grmc-record { position:relative; display:grid; grid-template-columns:92px 1fr; gap:18px; align-items:center; overflow:hidden; padding:24px; border:0; border-radius:22px; background:linear-gradient(135deg,#fffef9 0%,#f1f4ef 100%); box-shadow:0 15px 34px rgba(34,47,42,.14); transition:transform .2s ease,box-shadow .2s ease; }
+.grmc-record:before { content:''; position:absolute; inset:0 auto 0 0; width:5px; background:linear-gradient(#e86d43,#cf5429); }
+.grmc-record:hover { transform:translateY(-3px); box-shadow:0 20px 40px rgba(34,47,42,.18); }
+.grmc-seal { display:grid; width:92px; aspect-ratio:1; place-items:center; border:0; border-radius:50%; color:#263137; background:#e6ece4; box-shadow:inset 0 0 0 1px rgba(38,49,55,.1); font:700 19px/1 'DM Mono',monospace; letter-spacing:-.08em; }
 .grmc-seal small { margin-top:-25px; color:var(--rust); font-size:12px; letter-spacing:.1em; }
 .grmc-record strong,.grmc-record em,.grmc-record b { display:block; }
 .grmc-record strong { font:700 17px/1.5 'Noto Serif TC',serif; }
 .grmc-record em { margin-top:4px; color:#59636a; font-size:13px; font-style:normal; line-height:1.6; }
 .grmc-record b { margin-top:10px; color:var(--rust); font:11px 'DM Mono',monospace; letter-spacing:.04em; }
 .quality-copy p { margin:0 0 14px; color:#354148; font-size:15px; line-height:1.9; }
-.quality-copy small { display:block; color:#6b7478; font-size:12px; line-height:1.75; }
 
 .capabilities { padding:0 0 118px; background:#162028; color:#f7f5ee; }
 .capability-visual { min-height:390px; display:flex; align-items:end; background:linear-gradient(90deg,rgba(8,15,21,.87) 0%,rgba(8,15,21,.48) 43%,rgba(8,15,21,.08) 75%),url('/service-industrial-plant.png') center bottom/cover; }
@@ -45,7 +45,7 @@
 .gallery-viewport { width:100%; overflow:hidden; }.gallery-track { display:flex; width:max-content; gap:14px; padding-left:14px; animation:gallery-scroll 68s linear infinite; }
 .gallery-card { position:relative; display:block; width:clamp(200px,18vw,280px); aspect-ratio:1.12; overflow:hidden; background:#1d282f; }.gallery-card img { width:100%; height:100%; object-fit:cover; transition:transform .5s ease; }
 .gallery-card:after { content:''; position:absolute; inset:45% 0 0; background:linear-gradient(transparent,rgba(10,18,23,.8)); pointer-events:none; }.gallery-card span { position:absolute; z-index:1; right:16px; bottom:14px; left:16px; color:#fff; font:14px 'Noto Serif TC',serif; letter-spacing:.05em; }
-.gallery-card:hover img { transform:scale(1.06); }.gallery-viewport:hover .gallery-track { animation-play-state:paused; }@keyframes gallery-scroll { to { transform:translateX(-50%); } }@media (prefers-reduced-motion:reduce){.gallery-track{animation:none}}
+.gallery-card--equipment img { object-position:center 18%; }.gallery-card:hover img { transform:scale(1.06); }.gallery-viewport:hover .gallery-track { animation-play-state:paused; }@keyframes gallery-scroll { to { transform:translateX(-50%); } }@media (prefers-reduced-motion:reduce){.gallery-track{animation:none}}
 
 .contact-cta { padding:120px 0; background:#e8ebe6; color:#17232a; border-top:7px solid var(--rust); }.contact-cta .section-tag { color:var(--rust); }
 .contact-heading { display:grid; grid-template-columns:1.2fr .8fr; gap:60px; align-items:end; }.contact-heading p { max-width:330px; margin:0 0 8px; line-height:2; color:#536067; }
