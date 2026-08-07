@@ -1,0 +1,206 @@
+.brand-wordmark {
+  display: inline-block;
+  font-family: 'Noto Serif TC', serif;
+  font-weight: 700;
+  font-size: 18px;
+  letter-spacing: .12em;
+}
+
+.solutions {
+  padding: 128px 0;
+}
+
+.solutions h2,
+.capability-heading h2,
+.contact-heading h2 {
+  margin: 0;
+  font-family: 'Noto Serif TC', serif;
+  font-size: clamp(36px, 4.2vw, 56px);
+  line-height: 1.42;
+}
+
+.solution-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 56px;
+  border-top: 1px solid var(--line);
+  border-left: 1px solid var(--line);
+}
+
+.solution-grid article {
+  min-height: 175px;
+  padding: 25px 28px;
+  border-right: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+.solution-grid span,
+.capability-grid span {
+  color: var(--rust);
+  font: 12px 'DM Mono', monospace;
+}
+
+.solution-grid h3 {
+  margin: 25px 0 9px;
+  font: 23px 'Noto Serif TC', serif;
+}
+
+.solution-grid p {
+  margin: 0;
+  color: #626a70;
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+.capabilities {
+  padding: 0 0 118px;
+  background: #162028;
+  color: #f7f5ee;
+}
+
+.capability-visual {
+  min-height: 440px;
+  display: flex;
+  align-items: end;
+  background: linear-gradient(90deg, rgba(8, 15, 21, .87) 0%, rgba(8, 15, 21, .48) 43%, rgba(8, 15, 21, .08) 75%), url('/service-industrial-plant.png') center / cover;
+}
+
+.capability-visual-copy {
+  padding-bottom: 58px;
+}
+
+.capability-visual-copy .section-tag {
+  color: #ff9a72;
+}
+
+.capability-visual-copy p:last-child {
+  margin: 0;
+  font: clamp(28px, 3.2vw, 46px) 'Noto Serif TC', serif;
+  line-height: 1.45;
+}
+
+.capability-heading {
+  padding: 102px 0 54px;
+}
+
+.capability-heading .section-tag {
+  color: #ff9a72;
+}
+
+.capability-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  border-top: 1px solid rgba(255, 255, 255, .25);
+}
+
+.capability-grid article {
+  min-height: 240px;
+  padding: 30px 36px;
+  border-right: 1px solid rgba(255, 255, 255, .2);
+}
+
+.capability-grid article:first-child { padding-left: 0; }
+.capability-grid article:last-child { border-right: 0; }
+.capability-grid span { color: #ff9a72; }
+
+.capability-grid h3 {
+  margin: 53px 0 15px;
+  font: 27px 'Noto Serif TC', serif;
+}
+
+.capability-grid p {
+  max-width: 310px;
+  margin: 0;
+  color: #c5cbd0;
+  font-size: 14px;
+  line-height: 1.95;
+}
+
+.contact-cta {
+  padding: 120px 0;
+  background: #d94f24;
+  color: #fffaf2;
+}
+
+.contact-cta .section-tag { color: #ffe0d4; }
+
+.contact-heading {
+  display: grid;
+  grid-template-columns: 1.2fr .8fr;
+  gap: 60px;
+  align-items: end;
+}
+
+.contact-heading p {
+  max-width: 330px;
+  margin: 0 0 8px;
+  line-height: 2;
+  color: rgba(255, 250, 242, .88);
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1px;
+  margin-top: 58px;
+  background: rgba(255, 255, 255, .32);
+}
+
+.contact-card {
+  min-height: 164px;
+  display: grid;
+  grid-template-columns: 52px 1fr auto;
+  gap: 19px;
+  align-items: center;
+  padding: 26px;
+  background: #d94f24;
+  transition: background .2s ease;
+}
+
+.contact-card:hover { background: #c7441e; }
+
+.contact-icon {
+  width: 52px;
+  height: 52px;
+  display: grid;
+  place-items: center;
+  border: 1px solid rgba(255, 255, 255, .6);
+}
+
+.contact-icon svg { width: 24px; height: 24px; }
+.contact-card small { display: block; margin-bottom: 8px; color: #ffe0d4; font-size: 12px; letter-spacing: .08em; }
+.contact-card strong { font: 18px/1.55 'Noto Serif TC', serif; }
+.contact-card > b { align-self: start; font: 21px 'DM Mono', monospace; }
+
+.site-footer {
+  padding: 25px 0;
+  background: #11191f;
+  color: #91999e;
+  font: 10px 'DM Mono', monospace;
+  letter-spacing: .06em;
+}
+
+.site-footer span { margin-left: 18px; }
+
+@media (max-width: 720px) {
+  .brand-wordmark { font-size: 16px; }
+  .solutions { padding: 82px 0; }
+  .solution-grid,
+  .capability-grid,
+  .contact-grid,
+  .contact-heading { grid-template-columns: 1fr; }
+  .solution-grid { margin-top: 34px; }
+  .solution-grid article { min-height: auto; }
+  .capability-visual { min-height: 360px; background-position: 64% center; }
+  .capability-visual-copy { padding-bottom: 40px; }
+  .capability-heading { padding: 76px 0 35px; }
+  .capability-grid article,
+  .capability-grid article:first-child { min-height: auto; padding: 28px 0; border-right: 0; border-bottom: 1px solid rgba(255, 255, 255, .2); }
+  .capability-grid article:last-child { border-bottom: 0; }
+  .capability-grid h3 { margin: 24px 0 10px; }
+  .contact-cta { padding: 80px 0; }
+  .contact-heading { gap: 20px; }
+  .contact-grid { margin-top: 36px; }
+  .contact-card { min-height: 138px; padding: 22px; }
+  .site-footer span { display: block; margin: 9px 0 0; }
+}

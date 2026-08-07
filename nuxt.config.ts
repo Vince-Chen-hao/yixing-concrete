@@ -2,7 +2,7 @@ export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
   devtools: { enabled: false },
   ssr: true,
-  css: ['~/assets/css/main.css', '~/assets/css/services-icons.css'],
+  css: ['~/assets/css/main.css', '~/assets/css/industry-refresh.css'],
   app: {
     head: {
       htmlAttrs: { lang: 'zh-Hant-TW' },
