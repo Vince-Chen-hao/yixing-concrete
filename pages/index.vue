@@ -16,7 +16,7 @@
 
     <section class="intro shell" id="about">
       <p class="section-tag">WHO WE ARE</p>
-      <div class="intro-grid"><h2>把看不見的堅持，<br>做到每一方混凝土裡。</h2><div><p>混凝土不只是一項材料，更是建築、道路與橋梁長久運行的基礎。宜興預拌混凝土專注於每一個配比、每一次出料與每一段澆置節奏。</p><p>我們相信，真正的品質，是工程完成後依然能安靜地守住結構與日常。</p></div></div>
+      <div class="intro-grid"><h2>把看不見的堅持，<br>做到每一方混凝土裡。</h2><div class="intro-copy"><p>混凝土不只是一項材料，更是建築、道路與橋梁長久運行的基礎。宜興預拌混凝土專注於每一個配比、每一次出料與每一段澆置節奏。</p><p>我們相信，真正的品質，是工程完成後依然能安靜地守住結構與日常。</p></div></div>
     </section>
 
     <section class="project" id="project">
@@ -24,7 +24,7 @@
     </section>
 
     <section class="solutions shell" aria-labelledby="solution-title">
-      <p class="section-tag">PRODUCT PORTFOLIO</p><h2 id="solution-title">因應不同工程條件，<br>提供對應的混凝土解決方案。</h2>
+      <p class="section-tag">PRODUCT PORTFOLIO</p><div class="solutions-heading"><h2 id="solution-title">混凝土產品與技術</h2><p>從常規預拌到特殊性能配比，依工程條件提供對應方案。</p></div>
       <div class="solution-grid">
         <article><span>HFC</span><h3>高流動性混凝土</h3><p>兼顧施工性與澆置效率。</p></article>
         <article><span>SCC</span><h3>自充填混凝土</h3><p>適用於高密度配筋與複雜結構。</p></article>
@@ -37,7 +37,6 @@
 
     <section class="capabilities" id="service">
       <div class="capability-visual"><div class="shell capability-visual-copy"><p class="section-tag">OPERATIONAL STRENGTH</p><p>從拌合廠到工程現場，<br>穩定是可以被管理的。</p></div></div>
-      <div class="shell capability-heading"><p class="section-tag">OUR CAPABILITIES</p><h2>不只提供混凝土，<br>更提供讓工程放心推進的系統。</h2></div>
       <div class="shell capability-grid">
         <article><span>01</span><h3>材料設計與配比</h3><p>依工程條件評估工作性、強度與耐久需求，讓材料表現回應現場挑戰。</p></article>
         <article><span>02</span><h3>穩定供料與調度</h3><p>以拌合產能、車隊調度與施工節奏的整合，讓每一次澆置順暢銜接。</p></article>

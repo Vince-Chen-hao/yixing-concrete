@@ -19,6 +19,30 @@
   line-height: 1.42;
 }
 
+.intro-copy p {
+  font-size: 18px;
+  line-height: 2;
+}
+
+.solutions-heading {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 36px;
+}
+
+.solutions-heading h2 {
+  font-size: clamp(34px, 3vw, 44px);
+}
+
+.solutions-heading p {
+  max-width: 430px;
+  margin: 0;
+  color: #59636a;
+  font-size: 17px;
+  line-height: 1.8;
+}
+
 .solution-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -28,8 +52,8 @@
 }
 
 .solution-grid article {
-  min-height: 175px;
-  padding: 25px 28px;
+  min-height: 135px;
+  padding: 20px 25px;
   border-right: 1px solid var(--line);
   border-bottom: 1px solid var(--line);
 }
@@ -41,14 +65,14 @@
 }
 
 .solution-grid h3 {
-  margin: 25px 0 9px;
-  font: 23px 'Noto Serif TC', serif;
+  margin: 16px 0 7px;
+  font: 20px 'Noto Serif TC', serif;
 }
 
 .solution-grid p {
   margin: 0;
   color: #626a70;
-  font-size: 14px;
+  font-size: 15px;
   line-height: 1.8;
 }
 
@@ -59,10 +83,10 @@
 }
 
 .capability-visual {
-  min-height: 440px;
+  min-height: 390px;
   display: flex;
   align-items: end;
-  background: linear-gradient(90deg, rgba(8, 15, 21, .87) 0%, rgba(8, 15, 21, .48) 43%, rgba(8, 15, 21, .08) 75%), url('/service-industrial-plant.png') center / cover;
+  background: linear-gradient(90deg, rgba(8, 15, 21, .87) 0%, rgba(8, 15, 21, .48) 43%, rgba(8, 15, 21, .08) 75%), url('/service-industrial-plant.png') center bottom / cover;
 }
 
 .capability-visual-copy {
@@ -79,17 +103,10 @@
   line-height: 1.45;
 }
 
-.capability-heading {
-  padding: 102px 0 54px;
-}
-
-.capability-heading .section-tag {
-  color: #ff9a72;
-}
-
 .capability-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  padding-top: 56px;
   border-top: 1px solid rgba(255, 255, 255, .25);
 }
 
@@ -189,11 +206,13 @@
   .capability-grid,
   .contact-grid,
   .contact-heading { grid-template-columns: 1fr; }
+  .solutions-heading { display: block; }
+  .solutions-heading p { margin-top: 14px; font-size: 16px; }
   .solution-grid { margin-top: 34px; }
   .solution-grid article { min-height: auto; }
-  .capability-visual { min-height: 360px; background-position: 64% center; }
+  .capability-visual { min-height: 330px; background-position: 70% bottom; }
   .capability-visual-copy { padding-bottom: 40px; }
-  .capability-heading { padding: 76px 0 35px; }
+  .capability-grid { padding-top: 28px; }
   .capability-grid article,
   .capability-grid article:first-child { min-height: auto; padding: 28px 0; border-right: 0; border-bottom: 1px solid rgba(255, 255, 255, .2); }
   .capability-grid article:last-child { border-bottom: 0; }
