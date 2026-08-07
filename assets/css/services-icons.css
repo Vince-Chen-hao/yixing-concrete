@@ -1,0 +1,31 @@
+.service-grid article {
+  min-height: 275px;
+}
+
+.service-icon {
+  display: block;
+  width: 56px;
+  height: 56px;
+  margin-top: 24px;
+  color: var(--ink);
+}
+
+.service-grid h3 {
+  margin-top: 20px;
+}
+
+@media (max-width: 720px) {
+  .service-grid article {
+    min-height: auto;
+  }
+
+  .service-icon {
+    width: 48px;
+    height: 48px;
+    margin-top: 18px;
+  }
+
+  .service-grid h3 {
+    margin-top: 16px;
+  }
+}
