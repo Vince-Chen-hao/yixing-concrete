@@ -4,7 +4,7 @@
       <nav class="nav shell">
         <a class="brand company-brand" href="#top" aria-label="宜興預拌混凝土股份有限公司首頁">
           <img class="brand-logo" src="/yixing-logo.png" alt="宜興預拌混凝土公司標誌" width="56" height="62">
-          <span class="brand-name">宜興預拌混凝土<small>YI XING READY MIXED CONCRETE</small></span>
+          <span class="brand-name">宜興預拌混凝土</span>
         </a>
         <div class="nav-links"><a href="#about">關於宜興</a><a href="#project">工程實績</a><a href="#service">專業能力</a><a href="#contact">聯絡我們</a></div>
       </nav>
@@ -51,9 +51,9 @@
     <section class="project-gallery" aria-labelledby="gallery-title"><div class="shell gallery-heading"><div><p class="section-tag">ON SITE · FROM FACEBOOK</p><h2 id="gallery-title">現場，是品質真正被看見的地方。</h2></div><p>宜興的技術交流、廠區參訪與工程足跡。</p></div><div class="gallery-viewport"><div class="gallery-track"><a v-for="(photo, index) in galleryLoop" :key="`${photo.id}-${index}`" class="gallery-card" :href="photo.href" target="_blank" rel="noreferrer"><img :src="photo.src" :alt="photo.alt" loading="lazy"><span>{{ photo.label }}</span></a></div></div></section>
 
     <section class="contact-cta" id="contact"><div class="shell"><p class="section-tag">CONTACT US</p><div class="contact-heading"><h2>工程合作，<br>從一通可靠的電話開始。</h2><p>需要混凝土供應、材料規劃或工程合作，歡迎直接與宜興聯繫。</p></div><div class="contact-grid">
-      <a class="contact-card" href="https://maps.app.goo.gl/suhr2guwQosepXpu9" target="_blank" rel="noreferrer"><span class="contact-icon"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M20 10c0 5-8 11-8 11S4 15 4 10a8 8 0 1 1 16 0Z" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="10" r="2.5" stroke="currentColor" stroke-width="1.8"/></svg></span><span><small>公司地址</small><strong>宜蘭縣冬山鄉大興村<br>德興六路 43 號</strong></span><b>↗</b></a>
+      <a class="contact-card" href="https://maps.app.goo.gl/suhr2guwQosepXpu9" target="_blank" rel="noreferrer"><span class="contact-icon"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M20 10c0 5-8 11-8 11S4 15 4 10a8 8 0 1 1 16 0Z" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="10" r="2.5" stroke="currentColor" stroke-width="1.8"/></svg></span><span><small>公司地址</small><strong>宜蘭縣冬山鄉大興村<br>德興六路 43 號</strong></span><b>→</b></a>
       <a class="contact-card" href="tel:+88639903210"><span class="contact-icon"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 3h3l1.2 4-2 1.7a16 16 0 0 0 6.1 6.1l1.7-2 4 1.2v3c0 1.1-.9 2-2 2C10.2 19 5 13.8 5 7a4 4 0 0 1 2-4Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg></span><span><small>服務專線</small><strong>03-9903210</strong></span><b>→</b></a>
-      <a class="contact-card" href="https://www.facebook.com/yixingconcrete/?locale=zh_TW" target="_blank" rel="noreferrer"><span class="contact-icon"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M13.7 21v-8h2.7l.4-3h-3.1V8.1c0-.9.3-1.6 1.7-1.6H17V3.8c-.4-.1-1.2-.2-2.2-.2-2.2 0-3.7 1.4-3.7 3.8V10H8.5v3h2.6v8h2.6Z" fill="currentColor"/></svg></span><span><small>官方社群</small><strong>Facebook 粉絲專頁</strong></span><b>↗</b></a>
+      <a class="contact-card" href="https://www.facebook.com/yixingconcrete/?locale=zh_TW" target="_blank" rel="noreferrer"><span class="contact-icon"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M13.7 21v-8h2.7l.4-3h-3.1V8.1c0-.9.3-1.6 1.7-1.6H17V3.8c-.4-.1-1.2-.2-2.2-.2-2.2 0-3.7 1.4-3.7 3.8V10H8.5v3h2.6v8h2.6Z" fill="currentColor"/></svg></span><span><small>官方社群</small><strong>Facebook 粉絲專頁</strong></span><b>→</b></a>
     </div></div></section>
     <footer class="site-footer"><div class="shell">© {{ new Date().getFullYear() }} 宜興預拌混凝土股份有限公司<span>YI XING READY MIXED CONCRETE CO., LTD.</span></div></footer>
   </main>
